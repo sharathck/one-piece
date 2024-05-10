@@ -41,7 +41,7 @@ const App = () => {
     },
     {
       name: "Robin",
-      image: "./robin.jpeg",
+      image: `${process.env.PUBLIC_URL}/robin.jpeg`,
       description: "An archaeologist and a former assassin.",
       link: "https://en.wikipedia.org/wiki/Nico_Robin",
     },
