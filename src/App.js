@@ -64,15 +64,15 @@ const App = () => {
       <h1>One Piece Characters by Aarush</h1>
       <div className="tile-container">
         {characters.map((character) => (
-          <div className="tile" key={character.name}>
-            <a href={character.link}>
+          <a className="tile" href={character.link}>
+            <div key={character.name}>
               <img src={character.image} alt={character.name} />
-            </a>
-            <div className="tile-content">
-              <h3>{character.name}</h3>
-              <p>{character.description}</p>
+              <div className="tile-content">
+                <h3>{character.name}</h3>
+                <p>{character.description}</p>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

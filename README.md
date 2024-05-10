@@ -1,23 +1,17 @@
-# Getting Started with Create React App
+# To setup root home page for static images and files
+*add the following to package.json*
+```json
+  "homepage": "./one-piece/",
+```
+*add the following to the App.js code reference*
+```js
+      link: `${process.env.PUBLIC_URL}/robin.jpeg`,
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*to host website on github pages, update build command to place build files in docs folder
+```json
+    "build": "BUILD_PATH='./docs' react-scripts build",
+```
 
 ### `npm run build`
 
