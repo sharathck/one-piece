@@ -1,11 +1,15 @@
 # To setup root home page for static images and files
 *add the following to package.json*
 ```json
-  "homepage": "./one-piece/",
+  "homepage": "https://sharathck.github.io/one-piece/",
 ```
 *add the following to the App.js code reference*
 ```js
       link: `${process.env.PUBLIC_URL}/robin.jpeg`,
+```
+*when we change the homepage, sometime default github pages path may not work, we need to use full url like the following
+```url
+https://sharathck.github.io/one-piece/index.html
 ```
 
 *to host website on github pages, update build command to place build files in docs folder
