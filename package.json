@@ -1,7 +1,7 @@
 {
   "name": "one-piece",
   "version": "0.1.0",
-  "homepage": "./one-piece/",
+  "homepage": "https://sharathck.github.io/one-piece/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
